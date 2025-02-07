@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ccc;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #ddd;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            color: blue;
+        }
+        .navbar {
+            background-color: black;
+            padding: 10px;
+            text-align: right;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            padding: 8px 16px;
+        }
+        .navbar .active {
+            background-color: blue;
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .articles {
+            width: 65%;
+            display: flex;
+            gap: 10px;
+        }
+        .article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 45%;
+        }
+        .article button {
+            background: blue;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .login {
+            background: #ddd;
+            padding: 20px;
+            width: 30%;
+            border-radius: 5px;
+        }
+        .login input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        .login button {
+            width: 100%;
+            background: blue;
+            color: white;
+            border: none;
+            padding: 10px;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Mon Site</div>
+    <div class="navbar">
+        <a href="#">Accueil</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#" class="active">Connexion</a>
+    </div>
+    <div class="container">
+        <div class="articles">
+            <div class="article">
+                <h3>Article 1</h3>
+                <p>Description de l'article 1.</p>
+                <button>Lire plus</button>
+            </div>
+            <div class="article">
+                <h3>Article 2</h3>
+                <p>Description de l'article 2.</p>
+                <button>Lire plus</button>
+            </div>
+            <div class="article">
+                <h3>Article 3</h3>
+                <p>Description de l'article 3.</p>
+                <button>Lire plus</button>
+            </div>
+        </div>
+        <div class="login">
+            <h3>Connexion</h3>
+            <label>Email :</label>
+            <input type="email">
+            <label>Mot de passe :</label>
+            <input type="password">
+            <button>Se connecter</button>
+        </div>
+    </div>
+    <div class="footer">&copy; 2025 Mon Site. Tous droits réservés.</div>
+</body>
+</html>
